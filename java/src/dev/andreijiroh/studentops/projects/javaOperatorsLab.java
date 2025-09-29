@@ -24,7 +24,7 @@ public class javaOperatorsLab {
         boolean overweight = (bmiRounded >= 25) && (bmiRounded <= 30);
         boolean obese = (bmiRounded > 30);
 
-        /** Gen AI disclosure: Autocompleted by GitHub Copilot */
+        /** Gen AI disclosure: Autocompleted by GitHub Copilot (with a bit of human touch on checking if bmiRounded is valid) */
         if (bmiRounded < 0) {
             System.out.println("BMI Category: N/A (invalid BMI)");
         } else if (underweight) {
