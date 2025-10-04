@@ -1,7 +1,13 @@
 # Codelabs for Programming/CS Projects in College
 
-This repository contains the coding outputs for different computer programming course subjects
-in college, a la CS50(x).
+This repository contains the coding outputs for different computer programming
+course subjects in college, a la CS50(x).
+
+## Setting up
+
+### With Nix
+
+Make sure Nix and `direnv` are installed on your machine
 
 ## Code mirrors
 
