@@ -7,9 +7,12 @@
 
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"moby": true,
+			"azureDnsAutoDetection": true,
+			"installDockerBuildx": true,
+			"installDockerComposeSwitch": true,
 			"version": "latest",
-			"enableNonRootDocker": "true",
-			"moby": "true"
+			"dockerDashComposeVersion": "v2"
 		},
 		"ghcr.io/devcontainers/features/java:1": {
 			"installGradle": true,
@@ -17,7 +20,7 @@
 			"installAnt": true,
 			"installGroovy": true,
 			"version": "latest",
-			"jdkDistro": "tem",
+			"jdkDistro": "open",
 			"gradleVersion": "latest",
 			"mavenVersion": "latest",
 			"antVersion": "latest",
@@ -34,7 +37,29 @@
 			"version": "lts",
 			"pnpmVersion": "latest",
 			"nvmVersion": "latest"
-		}
+		},
+		"ghcr.io/devcontainers/features/python:1.8.0": {
+			"version": "3.13",
+			"installTools": true,
+			"installJupyterlab": true
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/python:1": {
+			"installTools": true,
+			"installJupyterlab": true,
+			"version": "latest"
+		},
+		"ghcr.io/skriptfabrik/devcontainer-features/gitlab-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/deno:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/tailscale:1": {},
+		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:1": {}
 	},
 	"customizations": {
 		"vscode": {
@@ -42,7 +67,8 @@
 				"vscjava.vscode-java-pack",
 				"redhat.java",
 				"vscjava.vscode-gradle",
-				"vscjava.vscode-maven"
+				"vscjava.vscode-maven",
+				"denoland.vscode-deno"
 			]
 		}
 	}

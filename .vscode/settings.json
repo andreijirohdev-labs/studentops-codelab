@@ -1,3 +1,8 @@
 {
-    "git.alwaysSignOff": true
+    "git.alwaysSignOff": true,
+    "java.project.sourcePaths": [
+        "java/src"
+    ],
+    "java.project.referencedLibraries": [],
+    "java.project.outputPath": "java/out"
 }
