@@ -59,7 +59,10 @@
 			"version": "latest"
 		},
 		"ghcr.io/devcontainers-extra/features/tailscale:1": {},
-		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:1": {}
+		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:1": {},
+		"ghcr.io/devcontainers/features/sshd:1": {
+        	"version": "latest"
+    	}
 	},
 	"customizations": {
 		"vscode": {
