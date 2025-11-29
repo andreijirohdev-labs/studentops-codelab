@@ -1,90 +1,90 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-in-docker
 {
-	"name": "Docker in Docker setup for StudentOps",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "name": "Docker in Docker setup for StudentOps",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
 
-	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {
-			"moby": true,
-			"azureDnsAutoDetection": true,
-			"installDockerBuildx": true,
-			"installDockerComposeSwitch": true,
-			"version": "latest",
-			"dockerDashComposeVersion": "v2"
-		},
-		"ghcr.io/devcontainers/features/java:1": {
-			"installGradle": true,
-			"installMaven": true,
-			"installAnt": true,
-			"installGroovy": true,
-			"version": "latest",
-			"jdkDistro": "open",
-			"gradleVersion": "latest",
-			"mavenVersion": "latest",
-			"antVersion": "latest",
-			"groovyVersion": "latest"
-		},
-		"ghcr.io/devcontainers/features/nix:1": {
-			"multiUser": true,
-			"useAttributePath": true,
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/node:1": {
-			"nodeGypDependencies": true,
-			"installYarnUsingApt": true,
-			"version": "lts",
-			"pnpmVersion": "latest",
-			"nvmVersion": "latest"
-		},
-		"ghcr.io/devcontainers/features/python:1.8.0": {
-			"version": "3.13",
-			"installTools": true,
-			"installJupyterlab": true
-		},
-		"ghcr.io/devcontainers/features/github-cli:1": {
-			"installDirectlyFromGitHubRelease": true,
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/python:1": {
-			"installTools": true,
-			"installJupyterlab": true,
-			"version": "latest"
-		},
-		"ghcr.io/skriptfabrik/devcontainer-features/gitlab-cli:1": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers-extra/features/deno:1": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers-extra/features/tailscale:1": {},
-		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:1": {},
-		"ghcr.io/devcontainers/features/sshd:1": {
-        	"version": "latest"
-    	}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"vscjava.vscode-java-pack",
-				"redhat.java",
-				"vscjava.vscode-gradle",
-				"vscjava.vscode-maven",
-				"denoland.vscode-deno"
-			]
-		}
-	}
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "moby": true,
+            "azureDnsAutoDetection": true,
+            "installDockerBuildx": true,
+            "installDockerComposeSwitch": true,
+            "version": "latest",
+            "dockerDashComposeVersion": "v2"
+        },
+        "ghcr.io/devcontainers/features/java:1": {
+            "installGradle": true,
+            "installMaven": true,
+            "installAnt": true,
+            "installGroovy": true,
+            "version": "latest",
+            "jdkDistro": "open",
+            "gradleVersion": "latest",
+            "mavenVersion": "latest",
+            "antVersion": "latest",
+            "groovyVersion": "latest"
+        },
+        "ghcr.io/devcontainers/features/nix:1": {
+            "multiUser": true,
+            "useAttributePath": true,
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "nodeGypDependencies": true,
+            "installYarnUsingApt": true,
+            "version": "lts",
+            "pnpmVersion": "latest",
+            "nvmVersion": "latest"
+        },
+        "ghcr.io/devcontainers/features/python:1.8.0": {
+            "version": "3.13",
+            "installTools": true,
+            "installJupyterlab": true
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {
+            "installDirectlyFromGitHubRelease": true,
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/python:1": {
+            "installTools": true,
+            "installJupyterlab": true,
+            "version": "latest"
+        },
+        "ghcr.io/skriptfabrik/devcontainer-features/gitlab-cli:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers-extra/features/deno:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers-extra/features/tailscale:1": {},
+        "ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:1": {},
+        "ghcr.io/devcontainers/features/sshd:1": {
+            "version": "latest"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "redhat.java",
+                "vscjava.vscode-gradle",
+                "vscjava.vscode-maven",
+                "denoland.vscode-deno"
+            ]
+        }
+    }
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "docker --version",
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "docker --version",
 
-	// Configure tool-specific properties.
-	// "customizations": {},
+    // Configure tool-specific properties.
+    // "customizations": {},
 
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
 }
