@@ -20,7 +20,7 @@ public class inputAndOutput {
         String studentType;
         int id;
         int year = today.get(Calendar.YEAR);
-        int month = today.get(Calendar.MONTH) + 1;
+        int month = today.get(Calendar.MONTH);
         int day = today.get(Calendar.DAY_OF_MONTH);
         String subject;
         String activitySummary;
