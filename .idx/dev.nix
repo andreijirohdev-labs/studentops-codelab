@@ -1,4 +1,4 @@
-{ pkg, lib, ... }: {
+{ pkgs, lib, ... }: {
   # Allow local config imports
   imports = lib.optionals (builtins.pathExists ./dev.local.nix) [
     ./dev.local.nix
@@ -12,6 +12,11 @@
     javaPackages.compiler.openjdk25
     github-cli
     glab
+    nodejs_24
+    npm-check-updates
+    deno
+    github-copilot-cli
+    gemini-cli
   ];
 
   idx = {
@@ -26,5 +31,17 @@
       "vscjava.vscode-gradle"
       "vscjava.vscode-java-dependency"
     ];
+    workspace = {
+      onCreate = {
+      };
+      onStart = {
+      };
+    };
+  };
+
+  services = {
+    docker = {
+      enable = true;
+    };
   };
 }

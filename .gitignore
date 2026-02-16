@@ -464,3 +464,7 @@ devenv.local.nix
 
 # pre-commit
 .pre-commit-config.yaml
+
+### Firebase Studio (Project IDX) specifics ###
+# avoid leeking that API key there
+.idx/dev.local.nix
