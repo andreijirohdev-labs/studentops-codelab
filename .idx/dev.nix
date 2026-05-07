@@ -17,6 +17,7 @@
     deno
     github-copilot-cli
     gemini-cli
+    nano
   ];
 
   idx = {

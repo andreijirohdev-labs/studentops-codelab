@@ -45,26 +45,8 @@ public class PETA_labs_20260326_activity1 {
       case March:
         System.out.println("Graduation time!");
         break;
-      case April:
-        System.out.println("TBD");
-        break;
-      case May:
-        System.out.println("TBD");
-        break;
-      case June:
-        System.out.println("TBD");
-        break;
       case July:
-        System.out.println("TBD");
-        break;
-      case August:
-        System.out.println("TBD");
-        break;
-      case September:
-        System.out.println("TBD");
-        break;
-      case October:
-        System.out.println("TBD");
+        System.out.println("We're so back to school!");
         break;
       case November:
         System.out.println("We'll be in [INSERT CEREMENTRY HERE] sending you thoughts and prayers. (context: TheJuiceMedia Honest Gov't Ads)");
@@ -74,6 +56,7 @@ public class PETA_labs_20260326_activity1 {
         break;
       default:
         // TNB\
+        System.out.println("Have a nice day!");
         break;
     };
   }

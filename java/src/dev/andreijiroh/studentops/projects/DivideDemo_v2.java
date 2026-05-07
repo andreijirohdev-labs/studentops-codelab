@@ -16,26 +16,21 @@ import java.util.InputMismatchException;
  */
 public class DivideDemo_v2 {
   public static void main(String[] args) {
-    while (true) {
-      Scanner keyboard = new Scanner(System.in);
-      try {
-        int a = 10;
-        System.out.print("Enter a integer: ");
-        int b = keyboard.nextInt();
-        int result = a / b;
-        System.out.println("Result: " + result);
-        break;
-      } catch (ArithmeticException e) {
-        System.err.println("Can't divide by zero or something gone wrong while trying to divide");
-        break;
-      } catch (InputMismatchException e) {
-        System.err.println("That parameter must be a integer");
-        keyboard.nextLine();
-      } catch (Exception e) {
-        System.err.println("Something gone wrong while running this program: "+ e);
-        break;
-      }
-      keyboard.close();
+    Scanner keyboard = new Scanner(System.in);
+    try {
+      int a = 10;
+      System.out.print("Enter a integer: ");
+      int b = keyboard.nextInt();
+      int result = a / b;
+      System.out.println("Result: " + result);
+    } catch (ArithmeticException e) {
+      System.err.println("Can't divide by zero or something gone wrong while trying to divide");
+    } catch (InputMismatchException e) {
+      System.err.println("That parameter must be a integer");
+      keyboard.nextLine();
+    } catch (Exception e) {
+      System.err.println("Something gone wrong while running this program: "+ e);
     }
+    keyboard.close();
   }
 }
