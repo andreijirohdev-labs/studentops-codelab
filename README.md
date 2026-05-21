@@ -31,6 +31,7 @@ Canonically at <https://gitlab.com/andreijiroh-dev/labs/studentops-codelab>,
 with mirrors at:
 
 * GitHub: <https://github.com/andreijirohdev-labs/studentops-codelab>
+* Tangled: <https://tangled.org/labs.andreijiroh.dev/studentops-codelab>
 
 ## Package namespace
 
