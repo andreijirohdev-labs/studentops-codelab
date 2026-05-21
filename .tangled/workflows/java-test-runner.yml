@@ -4,7 +4,7 @@ when:
 
 engine: nixery
 
-dependenciesp:
+dependencies:
   nixpkgs:
   - openjdk
 
