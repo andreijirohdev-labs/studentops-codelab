@@ -13,3 +13,5 @@ steps:
     run: java -XX:+ShowCodeDetailsInExceptionMessages -cp "$PWD/java/out" dev.andreijiroh.studentops.projects.fullNameChars
   - name: Run CarDemo code
     run: java -XX:+ShowCodeDetailsInExceptionMessages -cp "$PWD/java/out" dev.andreijiroh.studentops.projects.CarDemo
+  - name: Run ThreadActivity code
+    run: java -XX:+ShowCodeDetailsInExceptionMessages -cp "$PWD/java/out" dev.andreijiroh.studentops.projects.ThreadActivity
