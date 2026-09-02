@@ -8,12 +8,19 @@
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
   "java.debug.settings.onBuildFailureProceed": true,
-  "gitlens.remotes": [{
-    "domain": "altssh.gitlab.com",
-    "name": "GitLab.com",
-    "type": "GitLab",
-    "urls": {
-      "commit": "https://gitlab.com/${repo}"
+  "gitlens.remotes": [
+    {
+      "domain": "altssh.gitlab.com",
+      "name": "GitLab.com",
+      "type": "GitLab",
+      "urls": {
+        "commit": "https://gitlab.com/${repo}"
+      }
+    },
+    {
+      "domain": "mau.dev",
+      "type": "GitLab"
     }
-  }]
+  ],
+  "java.configuration.updateBuildConfiguration": "interactive"
 }
