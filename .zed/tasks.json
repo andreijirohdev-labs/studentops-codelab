@@ -1,0 +1,40 @@
+[
+  {
+    "label": "Run $ZED_CUSTOM_java_class_name (Windows/$PROCESSOR_ARCHITECTURE)",
+    "command": "powershell",
+    "args": [
+      "-NoLogo",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "$ZED_WORKTREE_ROOT\\.zed\\run-java.ps1",
+      "-JavaFile",
+      "$ZED_FILE",
+      "-Package",
+      "${ZED_CUSTOM_java_package_name:}",
+      "-ClassName",
+      "$ZED_CUSTOM_java_class_name"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "tags": ["java-main"]
+  },
+  {
+    "label": "Run $ZED_CUSTOM_java_class_name (Linux/$USER)",
+    "command": "sh",
+    "args": [
+      "$ZED_WORKTREE_ROOT/.zed/run-java.sh",
+      "$ZED_FILE",
+      "${ZED_CUSTOM_java_package_name:}",
+      "$ZED_CUSTOM_java_class_name"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "tags": ["java-main"]
+  }
+]
