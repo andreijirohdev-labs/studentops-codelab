@@ -1,7 +1,8 @@
 # Codelabs for Programming/CS Projects in College
 
 This repository contains the coding outputs for different computer programming
-course subjects in college, a la CS50(x).
+course subjects in college, a la [CS50(x)](https://cs50.harvard.edu/x/). You know
+the drill, archiving coding work for my future self.
 
 ## Setting up
 
@@ -23,7 +24,7 @@ have both `nix-command` and `flakes` experimental features enabled on your
 Once everything is set up, allow direnv to source out the `.envrc` file at the
 project root by running `direnv allow`. It will take a while to get the needed
 dependencies, especially if you don't have admin permissions to add your Linux
-user account as a trsuted user for the daemon (since it utilizes Cachix caches).
+user account as a trusted user for the daemon (since it utilizes Cachix caches).
 
 ## Code mirrors
 
@@ -32,12 +33,15 @@ with mirrors at:
 
 * GitHub: <https://github.com/andreijirohdev-labs/studentops-codelab>
 * Tangled: <https://tangled.org/labs.andreijiroh.dev/studentops-codelab>
+* Manimum GitLab: <https://mau.dev/andreijiroh-dev/labs/studentops-codelab>
 
 ## Package namespace
 
 **For Java and Kotlin code**: Code snippets in this repository uses the
 `dev.andreijiroh.studentops.projects` namespace following the Java packaging
 convention (also used on Android app IDs).
+
+**For TypeScript**: packages in this repository uses the `@ajhalili2006/` namespace for both [npm](https://npmjs.com) and [JSR](https://jsr.io) packages
 
 ## License
 
