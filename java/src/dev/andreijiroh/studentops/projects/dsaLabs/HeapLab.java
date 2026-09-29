@@ -4,7 +4,7 @@ import java.util.*;
 /**
 * 04 Laboratory Exercise 1 - Data Structures and Algorithms
 *
-* @author Andrei Jiroh Halili <halili.459491@meycauayan.sti.edu.ph>
+* @author Andrei Jiroh Halili (STI College Meycauayan) <halili.459491@meycauayan.sti.edu.ph>
 * @see https://gitlab.com/andreijiroh-dev/labs/studentops-codelab/-/blob/main/java/src/dev/andreijiroh/studentops/projects/dsaLabs/HeapLab.java
 */
 
