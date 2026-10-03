@@ -39,6 +39,7 @@ public class promptTooling {
     String name = input.nextLine();
     String contactNum = input.nextLine();
     double salary = input.nextDouble();
+    input.nextLine(); // quick fix for that ghost headache
     String department = input.nextLine();
     System.out.print("Is the faculty tenured? ");
     String isRegular = input.nextLine();
