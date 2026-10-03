@@ -1,4 +1,4 @@
-package dev.andreijiroh.studentops.projects.oopLabs;
+package dev.andreijiroh.studentops.projects.oopLabs.handsOnActivity0601;
 
 /**
  * 06 Hands-on Activity 1 - Object-Oriented Programming

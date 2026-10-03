@@ -1,10 +1,5 @@
 package dev.andreijiroh.studentops.projects.oopLabs.handsOnActivity0601;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern
-
-import dev.andreijiroh.studentops.projects.oopLabs.Employee;
-import dev.andreijiroh.studentops.projects.oopLabs.Faculty;
 
 /**
  * 06 Hands-on Activity 1 - Object-Oriented Programming
@@ -31,32 +26,50 @@ public class promptTooling {
     staffData.setSalary(salary);
     staffData.setDepartment(department);
 
-    System.out.println(staffData);
+    System.out.println("------------------------------");
+    System.out.println("Name: "+staffData.getName());
+    System.out.println("Contact Number: "+staffData.getContactNum());
+    System.out.println("Salary: "+staffData.getSalary());
+    System.out.println("Department: "+staffData.getDepartment());
   }
 
   public static void handleFaculty(Scanner input) {
-    final String regexForTrue = "true|yes|y|t";
-    final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
-
     Faculty facultyData = new Faculty();
     System.out.println("Type faculty's name, contact number, salary, and department and whethever they are regular or not. Press Enter after every input.");
     String name = input.nextLine();
     String contactNum = input.nextLine();
     double salary = input.nextDouble();
     String department = input.nextLine();
-    System.out.println("Is the faculty tenured?");
+    System.out.print("Is the faculty tenured? ");
     String isRegular = input.nextLine();
 
-    final Matcher isRegularMatcher = pattern.matcher(isRegular);
-    boolean isTenured = isRegularMatcher.find();
+    switch (isRegular.toLowerCase()) {
+      case "yes":
+        facultyData.setStatus(true);
+        break;
+      case "no":
+        facultyData.setStatus(false);
+        break;
+      default:
+        facultyData.setStatus(false);
+        break;
+    }
 
     facultyData.setName(name);
     facultyData.setContactNum(contactNum);
     facultyData.setSalary(salary);
     facultyData.setDepartment(department);
-    facultyData.setStatus(isTenured);
 
-    System.out.println(facultyData);
+    System.out.println("------------------------------");
+    System.out.println("Name: "+facultyData.getName());
+    System.out.println("Contact Number: "+facultyData.getContactNum());
+    System.out.println("Salary: "+facultyData.getSalary());
+    System.out.println("Department: "+facultyData.getDepartment());
+    if (facultyData.isRegular() == true) {
+      System.out.println("Is tenured?: Yes");
+    } else if (facultyData.isRegular() == false) {
+      System.out.println("Is tenured?: false");
+    }
   }
 
   public static void handleStudent(Scanner input) {
@@ -72,6 +85,10 @@ public class promptTooling {
     studentData.setProgram(program);
     studentData.setYearLevel(yearLevel);
 
-    System.out.println(studentData);
+    System.out.println("------------------------------");
+    System.out.println("Name: "+studentData.getName());
+    System.out.println("Contact Number: "+studentData.getContactNum());
+    System.out.println("Program: "+studentData.getProgram());
+    System.out.println("Year Level: "+studentData.getYearLevel());
   }
 }
