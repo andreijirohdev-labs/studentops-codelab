@@ -22,5 +22,8 @@
       "type": "GitLab"
     }
   ],
-  "java.configuration.updateBuildConfiguration": "interactive"
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "json.schemaDownload.trustedDomains": {
+    "https://recaptimedev-labs.github.io/workers-config-schema/config-schema.json": true
+  }
 }
