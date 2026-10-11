@@ -1,0 +1,17 @@
+{
+  "name": "@studentops-codelab/frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dsa:deploy": "wrangler deploy --config wrangler.dsa.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^2.34.2",
+    "wrangler": "^4.149.0"
+  }
+}
