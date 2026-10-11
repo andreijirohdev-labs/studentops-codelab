@@ -14,8 +14,10 @@ Data Structures and Algorithms Labs
   <body>
     <h1>Data Structures and Algorithms Labs</h1>
     <div class="tabContainer">
-      <button class="tabButton" onclick="openCity('profileTab')">Profile</button>
-      <button class="tabButton" onclick="openCity('gradesTab')">Grades</button>
+      <button class="tabButton active" type="button"
+        onclick="openCity('profileTab', this)" aria-selected="true">Profile</button>
+      <button class="tabButton" type="button"
+        onclick="openCity('gradesTab', this)" aria-selected="false">Grades</button>
     </div>
 
     <div id="profileTab" class="tab">

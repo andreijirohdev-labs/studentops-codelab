@@ -22,6 +22,35 @@ body {
   width: 100%;
 }
 
+.tabContainer {
+  display: flex;
+  gap: 5px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tabButton {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: var(--border-color);
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.tabButton:hover,
+.tabButton:focus-visible {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  outline: none;
+}
+
+.tabButton.active {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  border-bottom-color: var(--surface-color);
+  margin-bottom: -1px;
+}
+
 #profileForm {
   width: 150px;
   display: flex;
