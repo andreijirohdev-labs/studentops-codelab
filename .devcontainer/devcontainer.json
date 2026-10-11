@@ -71,7 +71,9 @@
         "redhat.java",
         "vscjava.vscode-gradle",
         "vscjava.vscode-maven",
-        "denoland.vscode-deno"
+        "denoland.vscode-deno",
+        "ecmel.vscode-html-css",
+        "george-alisson.html-preview-vscode"
       ]
     }
   }

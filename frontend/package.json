@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dsa:deploy": "wrangler deploy --config wrangler.dsa.json"
+    "dsa:deploy": "wrangler deploy --config wrangler.dsa.json",
+    "dsa:dev": "wrangler dev --config wrangler.dsa.json"
   },
   "keywords": [],
   "author": "",
