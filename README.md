@@ -1,16 +1,18 @@
 # Codelabs for Programming/CS Projects in College
 
-This repository contains the coding outputs for different computer programming
-course subjects in college, a la [CS50(x)](https://cs50.harvard.edu/x/). You know
-the drill, archiving coding work for my future self.
+This repository contains the coursework outputs for different computer
+programming course subjects I currently taken so far in college, a la
+[CS50(x)](https://cs50.harvard.edu/x/). You know the drill, archiving
+coding work for my future self and Git-powered recordkeeping.
 
 ## Setting up
 
 ### With GitHub Codespaces
 
-If you prefer not to wrestle with setting up Nix (or installing NixOS in that matter),
-you can utilize GitHub Codespaces (or another cloud dev environment service that
-supports the Dev Containers configuration standard).
+If you prefer not to wrestle with setting up Nix (or installing NixOS in that
+matter), you can utilize GitHub Codespaces (or another cloud dev environment
+service that supports the Dev Containers configuration standard) and open this
+repository.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/andreijirohdev-labs/studentops-codelab)
 
@@ -28,8 +30,8 @@ user account as a trusted user for the daemon (since it utilizes Cachix caches).
 
 ## Code mirrors
 
-Canonically at <https://gitlab.com/andreijiroh-dev/labs/studentops-codelab>,
-with mirrors at:
+Canonically developed at <https://gitlab.com/andreijiroh-dev/labs/studentops-codelab>,
+with mirrors available at:
 
 * GitHub: <https://github.com/andreijirohdev-labs/studentops-codelab>
 * Tangled: <https://tangled.org/labs.andreijiroh.dev/studentops-codelab>
@@ -41,7 +43,9 @@ with mirrors at:
 `dev.andreijiroh.studentops.projects` namespace following the Java packaging
 convention (also used on Android app IDs).
 
-**For TypeScript**: packages in this repository uses the `@ajhalili2006/` namespace for both [npm](https://npmjs.com) and [JSR](https://jsr.io) packages
+**For TypeScript**: packages in this repository uses the `@andreijiroh-dev/`
+namespace for both [npm](https://npmjs.com) and [JSR](https://jsr.io) packages,
+matching the GitHub / GitLab.com namespace slug.
 
 ## License
 
