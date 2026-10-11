@@ -13,7 +13,12 @@ Data Structures and Algorithms Labs
   </head>
   <body>
     <h1>Data Structures and Algorithms Labs</h1>
-    <div id="profileTab">
+    <div class="tabContainer">
+      <button class="tabButton" onclick="openCity('profileTab')">Profile</button>
+      <button class="tabButton" onclick="openCity('gradesTab')">Grades</button>
+    </div>
+
+    <div id="profileTab" class="tab">
       <form id="profileForm">
         <div id="surnameField">
           <label for="lastName">Surname</label><br>
@@ -30,12 +35,9 @@ Data Structures and Algorithms Labs
         </div>
         <button id="submit" type="submit" value="Print">Print</button>
       </form>
-
-      <div id="dataResult">
-        <p id="result"></p>
-      </div>
+      <p id="result"></p>
     </div>
-    <div id="gradesTab">
+    <div id="gradesTab" class="tab" style="display:none">
       <form id="gradesForm">
         <div id="gradesGrid">
           <div class="gradesHeader" aria-hidden="true">
@@ -103,6 +105,7 @@ Data Structures and Algorithms Labs
       </div>
     </div>
 
+    <script src="tabbedUi.js"></script>
     <script src="profileFormHandler.js"></script>
     <script src="gradesFormHandler.js"></script>
   </body>
