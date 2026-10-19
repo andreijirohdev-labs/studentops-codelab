@@ -1,0 +1,10 @@
+{
+  "$schema": "https://recaptimedev-labs.github.io/workers-config-schema/config-schema.json",
+  "name": "dsa-labs",
+  "account_id": "cf0bd808c6a294fd8c4d8f6d2cdeca05",
+  "compatibility_date": "2026-10-10",
+  "assets": {
+    "directory": "./dsa"
+  },
+  "workers_dev": true
+}

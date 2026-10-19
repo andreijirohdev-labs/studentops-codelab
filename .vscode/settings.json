@@ -23,5 +23,8 @@
     }
   ],
   "java.configuration.updateBuildConfiguration": "interactive",
-  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable"
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable",
+  "json.schemaDownload.trustedDomains": {
+    "https://recaptimedev-labs.github.io/workers-config-schema/config-schema.json": true
+  }
 }

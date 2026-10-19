@@ -2,6 +2,8 @@
     "recommendations": [
         "redhat.java",
         "vscjava.vscode-java-dependency",
-        "vscjava.vscode-java-test"
+        "vscjava.vscode-java-test",
+        "george-alisson.html-preview-vscode",
+        "ecmel.vscode-html-css"
     ]
 }

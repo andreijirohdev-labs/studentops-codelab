@@ -9,105 +9,106 @@ Data Structures and Algorithms Labs
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Data Structures and Algorithms Lab</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>Data Structures and Algorithms Labs</h1>
-    <form id="dataForm">
-      <div id="surnameField">
-        <label for="lastName">Surname</label><br>
-        <input type="text" id="surname" name="surname"><br>
-      </div>
-      <div id="firstNameField">
-        <label for="firstName">First name</label><br>
-        <input type="text" id="firstName" name="firstName"><br>
-      </div>
-      <div id="middleInitialField">
-        <label for="middleInitial">Middle initial</label><br>
-        <input type="text" id="middleInitial" name="middleInitial"
-        maxlength="4"><br>
-      </div>
-      <button id="submit" type="submit" value="Print">Print</button>
-    </form>
-
-    <div id="dataResult">
-      <p id="result"></p>
+    <div class="tabContainer">
+      <button class="tabButton active" type="button"
+        onclick="openCity('profileTab', this)" aria-selected="true">Profile</button>
+      <button class="tabButton" type="button"
+        onclick="openCity('gradesTab', this)" aria-selected="false">Grades</button>
     </div>
 
-    <!-- styling between dark and light modes -->
-    <style>
-      :root {
-        --bg-color: white;
-        --text-color: black;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg-color: #1a1a1a;
-          --text-color: white;
-        }
-      }
-      body {
-        background-color: var(--bg-color);
-        color: var(--text-color);
-        transition: background-color 0.3s ease-in;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 1rem;
-        width: 100%;
-      }
+    <div id="profileTab" class="tab">
+      <form id="profileForm">
+        <div id="surnameField">
+          <label for="lastName">Surname</label><br>
+          <input type="text" id="surname" name="surname"><br>
+        </div>
+        <div id="firstNameField">
+          <label for="firstName">First name</label><br>
+          <input type="text" id="firstName" name="firstName"><br>
+        </div>
+        <div id="middleInitialField">
+          <label for="middleInitial">Middle initial</label><br>
+          <input type="text" id="middleInitial" name="middleInitial"
+          maxlength="4"><br>
+        </div>
+        <button id="submit" type="submit" value="Print">Print</button>
+      </form>
+      <p id="result"></p>
+    </div>
+    <div id="gradesTab" class="tab" style="display:none">
+      <form id="gradesForm">
+        <div id="gradesGrid">
+          <div class="gradesHeader" aria-hidden="true">
+            <span>Subject</span>
+            <span>Grade</span>
+          </div>
+          <div class="gradeRow">
+            <label for="subject1">Subject 1</label>
+            <input type="text" id="subject1" name="subject">
+            <label for="grade1">Grade 1</label>
+            <input type="text" id="grade1" name="grade">
+          </div>
+          <div class="gradeRow">
+            <label for="subject2">Subject 2</label>
+            <input type="text" id="subject2" name="subject">
+            <label for="grade2">Grade 2</label>
+            <input type="text" id="grade2" name="grade">
+          </div>
+          <div class="gradeRow">
+            <label for="subject3">Subject 3</label>
+            <input type="text" id="subject3" name="subject">
+            <label for="grade3">Grade 3</label>
+            <input type="text" id="grade3" name="grade">
+          </div>
+          <div class="gradeRow">
+            <label for="subject4">Subject 4</label>
+            <input type="text" id="subject4" name="subject">
+            <label for="grade4">Grade 4</label>
+            <input type="text" id="grade4" name="grade">
+          </div>
+          <div class="gradeRow">
+            <label for="subject5">Subject 5</label>
+            <input type="text" id="subject5" name="subject">
+            <label for="grade5">Grade 5</label>
+            <input type="text" id="grade5" name="grade">
+          </div>
+          <div class="gradeRow">
+            <label for="subject6">Subject 6</label>
+            <input type="text" id="subject6" name="subject">
+            <label for="grade6">Grade 6</label>
+            <input type="text" id="grade6" name="grade">
+          </div>
+          <div class="gradeRow">
+            <label for="subject7">Subject 7</label>
+            <input type="text" id="subject7" name="subject">
+            <label for="grade7">Grade 7</label>
+            <input type="text" id="grade7" name="grade">
+          </div>
+          <div class="gradeRow">
+            <label for="subject8">Subject 8</label>
+            <input type="text" id="subject8" name="subject">
+            <label for="grade8">Grade 8</label>
+            <input type="text" id="grade8" name="grade">
+          </div>
+          <div class="gradeRow">
+            <label for="subject9">Subject 9</label>
+            <input type="text" id="subject9" name="subject">
+            <label for="grade9">Grade 9</label>
+            <input type="text" id="grade9" name="grade">
+          </div>
+        </div>
+        <button id="submit" type="submit" value="Print">Save</button>
+      </form>
+      <div id="sortedResult">
+      </div>
+    </div>
 
-      #dataForm {
-        width: 150px;
-        display: flex
-      }
-
-      #dataForm div {
-        padding: 5px;
-      }
-
-      input {
-        background-color: inherit;
-        border: 1px solid white;
-        width: 300px;
-        color: inherit;
-        margin-top: 5px;
-      }
-
-      #surname {
-        width: 100px;
-      }
-
-      #firstName {
-        width: 100px;
-      }
-
-      #middleInitial {
-        width: 35px;
-      }
-
-      #submit {
-        border-radius: 10px;
-        margin: 10px;
-        padding: 5px 10px;
-      }
-     </style>
-
-    <!-- inline JS code for handling form input on submit -->
-    <script>
-      let form = document.getElementById("dataForm");
-      let output = document.getElementById("result");
-
-      /**
-       * @param {SubmitEvent} event 
-       */
-      function handleFormSubmit(event) {
-        // avoid the nightmare of page reloads
-        event.preventDefault();
-
-        const formData = new FormData(form);
-
-        output.textContent = `${formData.get("surname")}, ${formData.get("firstName")} ${formData.get("middleInitial")}`
-      }
-
-      form.addEventListener("submit", handleFormSubmit)
-    </script>
+    <script src="tabbedUi.js"></script>
+    <script src="profileFormHandler.js"></script>
+    <script src="gradesFormHandler.js"></script>
   </body>
 </html>

@@ -3,11 +3,11 @@
 {
   "name": "Docker in Docker setup for StudentOps",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+  "image": "mcr.microsoft.com/devcontainers/base:trixie",
 
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "moby": true,
+      "moby": false,
       "azureDnsAutoDetection": true,
       "installDockerBuildx": true,
       "installDockerComposeSwitch": true,
@@ -31,7 +31,7 @@
       "useAttributePath": true,
       "version": "latest"
     },
-    "ghcr.io/devcontainers/features/node:1": {
+    "ghcr.io/devcontainers/features/node:2": {
       "nodeGypDependencies": true,
       "installYarnUsingApt": true,
       "version": "lts",
@@ -39,7 +39,7 @@
       "nvmVersion": "latest"
     },
     "ghcr.io/devcontainers/features/python:1.8.0": {
-      "version": "3.13",
+      "version": "latest",
       "installTools": true,
       "installJupyterlab": true
     },
@@ -71,7 +71,9 @@
         "redhat.java",
         "vscjava.vscode-gradle",
         "vscjava.vscode-maven",
-        "denoland.vscode-deno"
+        "denoland.vscode-deno",
+        "ecmel.vscode-html-css",
+        "george-alisson.html-preview-vscode"
       ]
     }
   }
