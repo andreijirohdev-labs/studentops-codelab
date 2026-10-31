@@ -1,9 +1,9 @@
 {
   "git.alwaysSignOff": true,
   "java.project.sourcePaths": [
-    "java/src"
+    "java/src",
+    "android-studio/java"
   ],
-  "java.project.referencedLibraries": [],
   "java.project.outputPath": "java/out",
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
