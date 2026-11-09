@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Java - OOP and friends",
+			"path": "java"
+		},
+		{
+			"name": "Android Studio Labs",
+			"path": "android-studio/java"
+		}
+	],
+	"settings": {
+		"java.import.maven.enabled": true,
+		"java.import.gradle.enabled": true
+	}
+}
