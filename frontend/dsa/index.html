@@ -41,6 +41,34 @@ Data Structures and Algorithms Labs
     </div>
     <div id="gradesTab" class="tab" style="display:none">
       <form id="gradesForm">
+        <div class="presetControls">
+          <div class="presetField">
+            <label for="yearSemesterPreset">Year &amp; Semester Preset:</label>
+            <select id="yearSemesterPreset" name="yearSemesterPreset">
+              <option value="">Custom (Manual)</option>
+              <option value="y1s1">1st Year - 1st Semester</option>
+              <option value="y1s2">1st Year - 2nd Semester</option>
+              <option value="y2s1">2nd Year - 1st Semester</option>
+              <option value="y2s2">2nd Year - 2nd Semester</option>
+              <option value="y3s1">3rd Year - 1st Semester</option>
+              <option value="y3s2">3rd Year - 2nd Semester</option>
+              <option value="y4s1">4th Year - 1st Semester</option>
+              <option value="y4s2">4th Year - 2nd Semester</option>
+            </select>
+          </div>
+          <div class="presetField">
+            <label for="quarterPreset">Quarter / Period Preset:</label>
+            <select id="quarterPreset" name="quarterPreset">
+              <option value="">Custom (Manual)</option>
+              <option value="allQuarters">All Quarters (Prelims, Midterms, Prefinals, Finals, Final Grade)</option>
+              <option value="Prelims">Prelims</option>
+              <option value="Midterms">Midterms</option>
+              <option value="Prefinals">Prefinals</option>
+              <option value="Finals">Finals</option>
+              <option value="Final Grade">Final Grade</option>
+            </select>
+          </div>
+        </div>
         <div id="gradesGrid">
           <div class="gradesHeader" aria-hidden="true">
             <span>Subject</span>
@@ -101,7 +129,8 @@ Data Structures and Algorithms Labs
             <input type="text" id="grade9" name="grade">
           </div>
         </div>
-        <button id="submit" type="submit" value="Print">Save</button>
+        <button id="report" type="submit" value="Show report on web">Report</button>
+        <button id="printToPdf" type="submit" value="Print as PDF">Print</button>
       </form>
       <div id="sortedResult">
       </div>
@@ -109,6 +138,6 @@ Data Structures and Algorithms Labs
 
     <script src="tabbedUi.js"></script>
     <script src="profileFormHandler.js"></script>
-    <script src="gradesFormHandler.js"></script>
+    <script src="gradesFormHandler.mjs" type="module"></script>
   </body>
 </html>
