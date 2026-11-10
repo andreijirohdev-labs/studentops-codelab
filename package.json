@@ -19,7 +19,8 @@
   "packageManager": "pnpm@12.10.1",
   "type": "module",
   "devDependencies": {
-    "wrangler": "^4.149.0"
+    "wrangler": "^4.159.0",
+    "@dotenvx/dotenvx": "2.38.2"
   },
   "workspaces": [
     "frontend"

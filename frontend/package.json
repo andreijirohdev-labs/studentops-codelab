@@ -12,7 +12,7 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "@dotenvx/dotenvx": "^2.34.2",
-    "wrangler": "^4.149.0"
+    "@dotenvx/dotenvx": "2.38.2",
+    "wrangler": "^4.159.0"
   }
 }
