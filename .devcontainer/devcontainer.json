@@ -38,7 +38,7 @@
       "pnpmVersion": "latest",
       "nvmVersion": "latest"
     },
-    "ghcr.io/devcontainers/features/python:1.8.0": {
+    "ghcr.io/devcontainers/features/python:1.8.1": {
       "version": "latest",
       "installTools": true,
       "installJupyterlab": true
