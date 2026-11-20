@@ -9,6 +9,7 @@ public class AppointmentSystem {
 
     public static void main(String[] args) {
         AppointmentService clinic = new AppointmentService(new InMemoryAppointmentRepository());
+        Scanner scanner = new Scanner(System.in);
 
         // Full constructor, then the short one, which chains through super(...)
         Doctor cardiologist = new Doctor("D-01", "Maria Santos", "0917-555-0101",
@@ -56,6 +57,8 @@ public class AppointmentSystem {
             System.out.println("  " + person.describe()
                     + "  [" + person.getClass().getSimpleName() + "]");
         }
+
+        scanner.close();
     }
 
     private static void printAgenda(AppointmentService clinic, Doctor doctor) {
